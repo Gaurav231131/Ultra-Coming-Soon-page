@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Coming Soon</title>
+    <!-- CSS फाइल को जोड़ा -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+
+    <main class="container">
+        <h1>ULTRA COMING SOON</h1>
+        <p class="subtitle">We are working hard to launch our new website. Stay tuned for something amazing!</p>
+
+        <!-- काउंटडाउन टाइमर बॉक्स -->
+        <div class="timer-top">
+            <div class="time-box">
+                <span id="days">59</span>
+                <small>Days</small>
+            </div>
+            <div class="time-box">
+                <span id="hours">04</span>
+                <small>Hours</small>
+            </div>
+            <div class="time-box">
+                <span id="minutes">12</span>
+                <small>Minutes</small>
+            </div>
+        </div>
+
+        <div class="timer-bottom">
+            <div class="time-box">
+                <span id="seconds">55</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+
+        <!-- क्लिक मी बटन -->
+        <button id="notifyBtn" class="btn">CLICK ME</button>
+
+        <!-- सोशल मीडिया आइकॉन्स -->
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">F</a>
+            <a href="#" aria-label="Twitter">T</a>
+            <a href="#" aria-label="Instagram">I</a>
+            <a href="#" aria-label="YouTube">Y</a>
+        </div>
+
+        <footer>© 2026 Ultra Coming Soon | All Rights Reserved</footer>
+    </main>
+
+    <!-- ईमेल नोटिफिकेशन पॉपअप (Modal) -->
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Get Notified!</h2>
+            <p>लॉन्च होते ही सबसे पहले अपडेट पाने के लिए अपना ईमेल डालें:</p>
+            <form id="notifyForm">
+                <input type="email" id="emailInput" placeholder="Enter your email..." required>
+                <button type="submit" class="submit-btn">Notify Me</button>
+            </form>
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript फाइल को जोड़ा -->
+    <script src="script.js"></script>
+</body>
+</html>
